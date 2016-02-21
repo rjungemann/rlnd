@@ -1,0 +1,26 @@
+{
+	"filetype" : "C74Snapshot",
+	"version" : 2,
+	"minorversion" : 0,
+	"name" : "rock-help",
+	"origin" : "rock-help",
+	"type" : "patcher",
+	"subtype" : "Undefined",
+	"embed" : 0,
+	"snapshot" : 	{
+		"valuedictionary" : 		{
+			"parameter_values" : 			{
+				"blob" : 				{
+					"#0-index" : [ 8, 2 ],
+					"1285-horizontal-indicator" : [ 8, 0, 1 ],
+					"1285-matrix" : [ 5, 2, 1, 8, 2, 1, 13, 1, 1, 15, 1, 1 ],
+					"1285-vertical-indicator" : [ 0, 2, 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
