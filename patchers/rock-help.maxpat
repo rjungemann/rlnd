@@ -46,7 +46,7 @@
 					"patching_rect" : [ 431.0, 169.0, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u245007091"
+					"varname" : "u478001569"
 				}
 
 			}
@@ -89,7 +89,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 118.0, 135.0, 281.0, 90.0 ],
+					"patching_rect" : [ 118.0, 135.0, 302.0, 110.0 ],
 					"varname" : "#0-rock",
 					"viewvisibility" : 1
 				}
@@ -116,27 +116,29 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-19" : [ "#0-index", "#0-index", 0 ],
-			"obj-1::obj-4" : [ "1285-horizontal-indicator", "1285-horizontal-indicator", 0 ],
+			"obj-1::obj-3" : [ "1000-horizontal-enabled", "1000-horizontal-enabled", 0 ],
 			"obj-1::obj-1" : [ "1285-matrix", "1285-matrix", 0 ],
-			"obj-1::obj-5" : [ "1285-vertical-indicator", "1285-vertical-indicator", 0 ]
+			"obj-1::obj-5" : [ "1285-vertical-indicator", "1285-vertical-indicator", 0 ],
+			"obj-1::obj-14" : [ "1000-vertical-enabled", "1000-vertical-enabled", 0 ],
+			"obj-1::obj-19" : [ "#0-index", "#0-index", 0 ],
+			"obj-1::obj-4" : [ "1285-horizontal-indicator", "1285-horizontal-indicator", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "rock-help.maxsnap",
-				"bootpath" : "~/Desktop/Rlnd/Rlnd/data",
+				"name" : "rock-help_20160221.maxsnap",
+				"bootpath" : "~/Desktop/Rlnd/data",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rock.maxpat",
-				"bootpath" : "~/Desktop/Rlnd/Rlnd/patchers",
+				"bootpath" : "~/Desktop/Rlnd/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rock.js",
-				"bootpath" : "~/Desktop/Rlnd/Rlnd/code",
+				"bootpath" : "~/Desktop/Rlnd/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -155,10 +157,12 @@
 				"valuedictionary" : 				{
 					"parameter_values" : 					{
 						"blob" : 						{
-							"#0-index" : [ 8, 2 ],
-							"1285-horizontal-indicator" : [ 8, 0, 1 ],
-							"1285-matrix" : [ 5, 2, 1, 8, 2, 1, 13, 1, 1, 15, 1, 1 ],
-							"1285-vertical-indicator" : [ 0, 2, 1 ]
+							"#0-index" : [ 0, 0 ],
+							"1000-horizontal-enabled" : [ 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1 ],
+							"1000-vertical-enabled" : [ 0, 0, 1, 0, 1, 1 ],
+							"1285-horizontal-indicator" : [ 0, 0, 1 ],
+							"1285-matrix" : [ 0, 0, 1, 0, 1, 1, 3, 0, 1, 3, 1, 1, 6, 0, 1, 6, 1, 1, 7, 1, 1 ],
+							"1285-vertical-indicator" : [ 0, 0, 1 ]
 						}
 
 					}
@@ -177,15 +181,17 @@
 						"origin" : "rock-help",
 						"type" : "patcher",
 						"subtype" : "Undefined",
-						"embed" : 0,
+						"embed" : 1,
 						"snapshot" : 						{
 							"valuedictionary" : 							{
 								"parameter_values" : 								{
 									"blob" : 									{
-										"#0-index" : [ 8, 2 ],
-										"1285-horizontal-indicator" : [ 8, 0, 1 ],
-										"1285-matrix" : [ 5, 2, 1, 8, 2, 1, 13, 1, 1, 15, 1, 1 ],
-										"1285-vertical-indicator" : [ 0, 2, 1 ]
+										"#0-index" : [ 0, 0 ],
+										"1000-horizontal-enabled" : [ 0, 0, 1, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1 ],
+										"1000-vertical-enabled" : [ 0, 0, 1, 0, 1, 1 ],
+										"1285-horizontal-indicator" : [ 0, 0, 1 ],
+										"1285-matrix" : [ 0, 0, 1, 0, 1, 1, 3, 0, 1, 3, 1, 1, 6, 0, 1, 6, 1, 1, 7, 1, 1 ],
+										"1285-vertical-indicator" : [ 0, 0, 1 ]
 									}
 
 								}
@@ -196,10 +202,10 @@
 ,
 						"fileref" : 						{
 							"name" : "rock-help",
-							"filename" : "rock-help.maxsnap",
-							"filepath" : "~/Desktop/Rlnd/Rlnd/data",
+							"filename" : "rock-help_20160221.maxsnap",
+							"filepath" : "~/Desktop/Rlnd/data",
 							"filepos" : -1,
-							"snapshotfileid" : "cf396c85438f9747ed5202115cac26ed"
+							"snapshotfileid" : "af34af9c9c96557e33e0af1977daec2c"
 						}
 
 					}

@@ -3,6 +3,8 @@ var y = 0;
 var width = 16;
 var height = 4;
 var m = [];
+var horizontalEnableds = {};
+var verticalEnableds = {};
 
 var i = 0;
 var j = 0;
@@ -21,18 +23,32 @@ function matrix (col, row, value) {
 }
 
 function bang () {
-	x++;
-	if (x >= width) {
-		x = 0;
-		y++;
+	// TODO: Handle situation where no enableds are checked.
+	var i = 0;
+	var isCompleted = false;
+	while (i < 64) {
+		x++;
+		if (x >= width) {
+			x = 0;
+			y++;
+		}
+		
+		if (y >= height) {
+			x = 0;
+			y = 0;
+		}
+		
+		if (horizontalEnableds[x] && verticalEnableds[y]) {
+			isCompleted = true;
+			break;
+		}
+		
+		i++;
 	}
 	
-	if (y >= height) {
-		x = 0;
-		y = 0;
+	if (!isCompleted) {
+		return;
 	}
-	
-	post(m[x][y]);
 	
 	if (m[x][y] == 1) {
 		outlet(0, 'trigger');
@@ -59,4 +75,19 @@ function setindex (_x, _y) {
 	for (; j < height; j++) {
 		outlet(0, ['vertical-indicator', 0, j, (j === y ? 1 : 0)]);
 	}
+}
+
+function horizontalEnabled (col, row, value) {
+	horizontalEnableds[col] = value;
+}
+
+function verticalEnabled (col, row, value) {
+	verticalEnableds[row] = value;
+}
+
+function reset () {
+	x = 0;
+	y = 0;
+	setindex(x, y);
+	getindex();
 }
