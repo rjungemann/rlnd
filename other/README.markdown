@@ -5,5 +5,5 @@ TODO
 ----
 
 * Store legato in a pattr
-* Modify rock to allow for fewer rows or columns
 * Reset rock when new key is pressed
+* Split rock and rlnd into two devices which communicate using MIDI
